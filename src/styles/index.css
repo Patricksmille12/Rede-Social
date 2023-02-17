@@ -1,0 +1,151 @@
+body{
+    width: 98vw;
+    height: 100vh;
+    background-color: var(--white-default);
+}
+
+.main__container{
+    margin-top: 100px;
+}
+
+
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100vw;
+    height: 76px;
+
+    position: fixed;
+    top: 0;
+
+    background-color: var(--grey-1);
+}
+
+.width-img{
+    width: 119px;
+    height: 14px;
+    
+    margin-left: 12px;
+}
+
+.header__button{
+    margin-right: 20px;
+
+    font-size: 0.875rem;
+    font-weight: 400px;
+    line-height: 16px;
+
+    background-color: var(--grey-1);
+    color: var(--white-default);
+}
+
+.flex-img{
+    display: flex;
+    align-items: center;
+    margin: 32px 10px 10px 10px;
+}
+
+.flex-div{
+    margin: 0 10px;
+}
+
+.flex-div h2{
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 0px 0px 5px 0px;
+    color: var(--grey-1);
+}
+
+.flex-div p{
+    line-height: 16px;
+    font-weight: 400px;
+    font-size: 0.875rem;
+    color: var(--grey-2);
+}
+
+.img-home{
+    width: 52px;
+    height: 52px;
+
+    margin-left: 8px;
+}
+
+.input__container{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.post-input{
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+
+    border-radius: var(--radius-4);
+    border: 1px solid var(--grey-4);
+}
+
+.description-input{
+    width: 90%;
+    height: 130px;
+    margin: 0 auto;
+
+    border-radius: var(--radius-4);
+    border: 1px solid var(--grey-4);
+}
+
+.post-input::placeholder{
+    padding: 12px;
+}
+
+.description-input::placeholder{
+   padding: 12px;
+}
+
+.div__button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    margin-right: 19px;
+    margin-top: 12px;
+}
+
+.post-button{
+    width: 60px;
+    height: 28px;
+
+    font-weight: bold;
+    font-size: 0.6rem;
+    border-radius: 2px;
+
+    color: var(--grey-3) ;
+    background-color: var(--grey-4);
+}
+
+@media(min-width: 769px){
+    .width-vw{
+        width: 70vw;
+    } 
+
+    .section__container{
+        display: flex;
+    }
+
+    .posts__section{
+        margin: 12px;
+        width: 60vw;
+    }
+
+    .margin-left{
+        margin-left: 36px;
+    }
+
+    .post-button{
+        margin-right: 32px;
+    }
+}

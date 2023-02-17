@@ -1,0 +1,70 @@
+.dialog__container{
+    border: none;
+    position: fixed;
+    top: 44px;
+    
+    border-radius: var(--radius-4);
+}
+
+.dialog__container::backdrop{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal__container{
+    width: 84vw;
+    height: max-content;
+}
+
+.dialog_div{
+    display: flex;
+    align-items: center;
+}
+
+.absolute-button{
+    position: absolute;
+
+    top: 19px;
+    right: 20px;
+
+    font-weight: bold;
+    color: var(--grey-3);
+}
+
+
+.dialog-description{
+    margin: 10px;
+    font-weight: bold;
+    font-size: 1.125rem;
+    color: var(--grey-1);
+}
+
+.dialog-paragraph{
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 120%;
+    color: var(--grey-2);
+}
+
+@media(min-width: 769px){
+    .dialog__container{
+        top: -150px; 
+    }
+
+    .modal__container{
+        width: 40vw;
+        overflow: hidden;
+    }
+
+    .dialog-description, .dialog-paragraph{
+        width: 80%;
+    }
+
+    .absolute-button{
+        cursor: pointer;
+    }
+    
+    .margin-left{
+        margin-left: 10px;
+    }
+}

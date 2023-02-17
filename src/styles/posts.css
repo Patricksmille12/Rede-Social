@@ -1,0 +1,79 @@
+.posts__title{
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin: 10px;
+    color: var(--grey-1);
+}
+
+.posts__div{
+    margin-top: 32px;
+}
+
+.flex-posts{
+    display: flex;
+}
+
+.descriptionPost__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.descriptionPost__container h3{
+    margin: 10px;
+    font-weight: bold;
+    font-size: 1.125rem;
+    color: var(--grey-1);
+}
+
+.descriptionPost__container p {
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 120%;
+    color: var(--grey-2);
+}
+
+.openPost__container{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.open-post{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 5.75rem;
+    height: 2.375rem;
+    font-size: 0.875rem;
+
+    border-radius: 2px;
+    background-color: var(--grey-1) ;
+    color: var(--white-default);
+    border: none;
+}
+
+.like-icon{
+    width: 22px;
+    height: 20px;
+
+    margin-left: 20px;
+}
+
+.count{
+    margin-left: 4px;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+@media(min-width: 769px){
+    .posts__section{
+        margin-left: 33px;
+    }
+
+    .like-icon{
+        cursor: pointer;
+    }
+}
